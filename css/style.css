@@ -449,7 +449,7 @@ footer ul li {
     border-color: rgba(28, 27, 26, 0);
     border-top: 1px solid rgba(28, 27, 26, 0.1);
     letter-spacing: 0.07em;
-    padding-left: 5px; }
+    padding-left: 3px; }
     .products-grid-block .btn-product-column .btn-buy:hover,
     .products-grid-block .btn-product-column .btn-overview:hover {
       border-color: #2985F7 !important; }
