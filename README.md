@@ -24,5 +24,5 @@
 
 [Template](https://www.figma.com/file/OvWzD08AE5sR77M76pSJTYmi/Test-Task-Eleken?node-id=1%3A2)
 
-Live preview pages link: [Template source](https://shkurchenko.github.io/)
+Live preview pages link: [Live page](https://shkurchenko.github.io/)
 
