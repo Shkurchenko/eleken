@@ -1,0 +1,245 @@
+.content-heading-title
+	font-size: 24px
+
+.product-heading-content,
+.products-container
+	flex-wrap: wrap
+
+.product-heading-content
+	margin-top: 42px
+
+
+.content-heading
+	@extend .flexbox
+	@extend .justify-content-space-between
+	@extend .align-items-center
+	width: 100%
+	padding-bottom: 11px
+	border-bottom: 1px solid rgba(28, 27, 26, 0.1)
+
+.content-heading-swith-btn
+	@extend .flexbox
+	@extend .justify-content-space-between
+	img
+		cursor: pointer
+
+.product-heading-block
+	@extend .flexbox
+	width: 100%
+	justify-content: flex-start
+	margin-top: 29px
+	li
+		@extend .flexbox
+		font-size: 10px
+		font-weight: bold
+		line-height: 16px
+		color: $third_color
+//-----------------------------------------------------------------------		
+// list view
+//-----------------------------------------------------------------------
+.products-list-block
+	@extend .align-items-center
+	width: 100%
+	border-bottom: 1px solid rgba(28, 27, 26, 0.1)
+	box-sizing: border-box
+	margin: 20px 0 0 0
+	padding-bottom: 18px
+	.product-info-block
+		@extend .justify-content-start
+		letter-spacing: 0.00em
+		height: 100%
+		align-items: center
+		span
+			img
+				vertical-align: bottom
+				margin-left: 6px
+	.btn-product-column
+		@extend .justify-content-space-between
+
+.products-list-block:first-child 
+	margin-top: 15px
+	padding-bottom: 19px
+
+.company-name-rating
+	align-self: center
+	.company-name
+		line-height: 20px
+		letter-spacing: 0
+	.compay-rating
+		letter-spacing: -0.07em
+		position: relative
+		top: 1.35px
+	.compay-rating i 
+		font-size: 11.27px
+
+.product-company-logo
+	margin-right: 20px
+	img
+		position: relative
+		top: 1px
+
+//-----------------------------------------------------------------------		
+// grid view
+//-----------------------------------------------------------------------
+.products-grid-block
+	width: 282px
+	flex-direction: column
+	padding: 29px 29px 0
+	border: 1px solid rgba(28, 27, 26, 0.1)
+	margin-top: 40px
+	box-sizing: border-box
+	position: relative
+	display: none
+
+.products-grid-block.grid-visible
+	@extend .flexbox
+
+.grid-content
+	margin-bottom: 40px
+	@extend .justify-content-space-between
+.grid-content + footer
+	margin-top: 0
+
+.products-grid-block > div 
+	@extend .justify-content-space-between
+	@extend .align-items-center
+	width: 100%
+	height: 40px
+	span.grid-visible
+		color: $secondary_color
+	span
+		line-height: 20px
+
+.products-grid-block 
+	.type-column
+		img 
+			vertical-align: bottom
+			margin-left: 6px
+			height: 15px
+	.metal-level-column
+		img
+			margin-left: 5px
+		i
+			margin-right: 5px
+			position: relative
+			top: -1px
+	.yearly-deductible-column
+		border-color: transparent !important
+	.drugs-column img,
+	.primary-care-column img,
+	.yearly-deductible-column img
+		margin-right: 5px
+		vertical-align: text-bottom
+	.primary-care-column
+		box-sizing: border-box
+	.price-column
+		@extend .justify-content-center
+		@extend .align-items-end
+		font-size: 36px
+		font-weight: 300
+		letter-spacing: 0.02em
+		margin: 22px 0 76px
+		span
+			font-size: 20px
+			position: relative
+			top: -2px
+			font-weight: 400
+	.btn-product-column
+		position: absolute
+		bottom: -1px
+		left: -1px
+		right: 0
+		width: 282px
+		.btn-buy,
+		.btn-overview
+			width: 50%
+			font-size: 12px
+			font-weight: 600
+			padding: 9px 0
+			border-radius: 0
+			border-color: rgba(28, 27, 26, 0)
+			border-top: 1px solid rgba(28, 27, 26, 0.1)
+			letter-spacing: 0.07em
+			padding-left: 5px
+			&:hover
+				border-color: #2985F7 !important
+
+			
+
+.products-grid-block
+	.grid-icon-width-1
+		width: 14px
+		height: 15px
+	.grid-icon-width-2
+		width: 16px
+		height: 18px
+	.grid-margin-2
+		font-size: 16px
+	
+
+.products-grid-block
+	.type-column span:last-child,
+	.metal-level-column span:last-child
+		@extend .flexbox
+		@extend .align-items-center
+	
+
+
+// grid company block
+.products-grid-block .covering-column,
+.products-grid-block .type-column,
+.products-grid-block .metal-level-column,
+.products-grid-block .drugs-column,
+.products-grid-block .primary-care-column,
+.products-grid-block .yearly-deductible-column
+	border-bottom: 1px solid rgba(28, 27, 26, 0.1)
+
+.products-grid-block .company-column
+	margin-bottom: 20px
+	height: 55px
+	@extend .justify-content-start
+	.company-name
+		font-size: 20px
+		line-height: 27px
+		position: relative
+		top: -3px
+		margin-left: 1px
+		@extend .align-items-start
+	.company-name-rating .compay-rating i
+		font-size: 15.46px
+	.product-company-logo
+		line-height: 0
+		img
+			min-width: 55px
+			position: relative
+			top: 0px
+	.company-name-rating .compay-rating
+		top: 3px
+		left: -1px
+
+
+.products-grid-block .product-company-logo.mr20
+		margin-right: 21px
+
+.products-grid-block .company-name.grid-correction
+	position: relative
+	left: -3px
+
+@media screen and (max-width: 1200px)
+	.products-list-block
+		.product-company-logo
+			margin-right: 10px
+
+	.product-heading-block li 
+		font-size: 9px
+@media screen and ( max-width: 1023px)
+	.grid-content
+		justify-content: space-around
+	.products-grid-block
+		margin: 40px 12px 0
+	.content-heading-swith-btn
+		display: none
+	.content-heading
+		height: 40px
+	.product-heading-block
+		display: none !important

@@ -1,0 +1,29 @@
+footer
+	.container
+		min-height: 80px
+	.copyright
+		opacity: 0.7
+		margin-right: 30px
+	.copyright,
+	.footer-menu
+		@extend .flexbox
+		@extend .align-items-center
+	ul
+		@extend .flexbox
+		li
+			margin-right: 30px
+			a
+				color: $footer_secondary_color
+				opacity: 0.7
+			a:hover
+				color: $footer_primary_color
+				opacity: 1
+
+@media screen and (max-width: 1023px)
+	.footer-menu
+		display: none !important
+
+@media screen and (max-width: 767px)
+	footer
+		.container
+			justify-content: center

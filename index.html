@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INSURE.</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+	<link rel="stylesheet" media="all" href="css/iconfont.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-logo"><a href="#"><img src="img/Logo.png" alt="INSURE."></a></div>
+			<div class="nav-block">
+				<div class="visible-mobile menu-toggle-btn">
+					<img src="img/butger-button.svg" alt="menu-toggle-btn">
+				</div>
+				<ul class="menu">
+					<li><a href="" class="active">Personal Plans</a></li>
+					<li><a href="">Business Plans</a></li>
+					<li><a href="">Guide</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="product-heading-content container">
+		<div class="content-heading">
+			<div class="content-heading-title">Insurance list:</div>
+			<div class="content-heading-swith-btn">
+				<img id="grid-view" src="img/table-view-icon.svg" alt="">
+				<div class="divider"></div>
+				<img id="list-view" src="img/card-view-icon.svg" alt="">
+			</div>
+		</div>
+		
+		<ul class="product-heading-block">
+			<li class="company-column">COMPANY</li>
+			<li class="covering-column">COVERING</li>
+			<li class="type-column">TYPE</li>
+			<li class="metal-level-column">METAL LEVEL</li>
+			<li class="drugs-column">DRUGS</li>
+			<li class="primary-care-column">PRIMARY CARE VISITS</li>
+			<li class="yearly-deductible-column">YEARLY DEDUCTIBLE</li>
+			<li class="price-column">PRICE</li>
+		</ul>
+		</div>
+		<div id="content" class="products-container container">
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Health</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>PPO<img class="grid-icon-width-1" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="platinum"><i class="icon-circle"></i>Platinum<img class="grid-icon-width-1" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$356/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo-2.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name grid-correction">Health Ins</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>All-in-one</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>HMO<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="silver"><i class="icon-circle grid-margin-2"></i>Silver<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>100%</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$45</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$4500</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$611/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo  mr20">
+						<img src="img/company-logo-1.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Dentalife</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Dental</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>EPO<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="gold"><i class="icon-circle grid-margin-2"></i>Gold<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>100%</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$5000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$283/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+						<span class="btn-overview">OVERVIEW</span>
+						<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img class="grid-correction" src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Vision</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>POS<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="bronze"><i class="icon-circle grid-margin-2"></i>Bronze<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>100%</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$60</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$2600</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$214/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo11.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Medicon</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Health</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>PPO<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="catastrophic"><i class="icon-circle"></i>Catastrophic<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$20</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>40%</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$300/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo-2.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Health Ins</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Dental</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>POS<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="platinum"><i class="icon-circle"></i>Platinum<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$5000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$234/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Health</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>HMO<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="gold"><i class="icon-circle"></i>Gold<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>100%</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$45</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$4500</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$366/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo11.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Medicon</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>All-in-one</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>EPO<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="catastrophic"><i class="icon-circle"></i>Catastrophic<img src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>50%</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$2600</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$371/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Health</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>PPO<img class="grid-icon-width-1" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="platinum"><i class="icon-circle"></i>Platinum<img class="grid-icon-width-1" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$356/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo-2.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name grid-correction">Health Ins</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>All-in-one</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>HMO<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="silver"><i class="icon-circle grid-margin-2"></i>Silver<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$611/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo  mr20">
+						<img src="img/company-logo-1.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Dentalife</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Dental</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>EPO<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="gold"><i class="icon-circle grid-margin-2"></i>Gold<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$283/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+						<span class="btn-overview">OVERVIEW</span>
+						<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img class="grid-correction" src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Vision</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>POS<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="bronze"><i class="icon-circle grid-margin-2"></i>Bronze<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$214/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Health</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>PPO<img class="grid-icon-width-1" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="platinum"><i class="icon-circle"></i>Platinum<img class="grid-icon-width-1" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$356/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img src="img/company-logo-2.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name grid-correction">Health Ins</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>All-in-one</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>HMO<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="silver"><i class="icon-circle grid-margin-2"></i>Silver<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$611/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo  mr20">
+						<img src="img/company-logo-1.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Dentalife</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Dental</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>EPO<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="gold"><i class="icon-circle grid-margin-2"></i>Gold<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$283/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+						<span class="btn-overview">OVERVIEW</span>
+						<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+			<div class="products-list-block product-block flexbox justify-content-start grid-visible">
+				<div class="company-column flexbox product-info-block">
+					<div class="product-company-logo">
+						<img class="grid-correction" src="img/company-logo.svg" alt="">
+					</div>
+					<div class="company-name-rating">
+						<div class="company-name">Insurcom</div>
+						<div class="compay-rating">
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+							<i class="icon-Star active"></i>
+						</div>
+					</div>
+				</div>
+				<div class="covering-column flexbox product-info-block">
+					<span class="grid-visible">Covering:</span>
+					<span>Vision</span>
+				</div>
+				<div class="type-column flexbox product-info-block">
+					<span class="grid-visible">Type:</span>
+					<span>POS<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="metal-level-column flexbox product-info-block">
+					<span class="grid-visible">Metal level:</span>
+					<span class="bronze"><i class="icon-circle grid-margin-2"></i>Bronze<img class="grid-icon-width-2" src="img/info-icon.svg" alt=""></span>
+				</div>
+				<div class="drugs-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Drugs:</span>
+					<span>$15</span>
+				</div>
+				<div class="primary-care-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Primary Care Visits:</span>
+					<span>$75</span>
+				</div>
+				<div class="yearly-deductible-column flexbox product-info-block">
+					<span class="grid-visible"><img class="grid-icon-width-1" src="img/info-icon.svg">Yearly Deductible:</span>
+					<span>$6000</span>
+				</div>
+				<div class="price-column flexbox product-info-block">
+					$214/<span>mon</span>
+				</div>
+				<div class="btn-product-column flexbox product-info-block">
+					<span class="btn-overview">OVERVIEW</span>
+					<span class="btn-buy">BUY</span>
+				</div>
+			</div>
+
+
+	</div>
+	<footer>
+		<div class="container">
+			<div class="copyright">INSURE. All rights reserved 2017</div>
+			<div class="footer-menu">
+				<ul>
+					<li><a href="" class="active">Personal Plans</a></li>
+					<li><a href="">Business Plans</a></li>
+					<li><a href="">Guide</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
