@@ -42,7 +42,7 @@ $( document ).ready(function(){
 
 	//grid view for tablet/mobile
 
-    if ( $(window).width() < 768 ) {
+    if ( $(window).width() < 1023 ) {
     	$('#content > .product-block').removeClass('products-list-block');
 		$('#content > .product-block').addClass('products-grid-block');
     };
